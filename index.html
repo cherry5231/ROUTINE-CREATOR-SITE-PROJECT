@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Routine Task Manager</title>
+</head>
+<body>
+
+<h2>WELCOME TO DAILY ROUTINE TASK MANAGER</h2>
+
+<p>
+THIS SITE ALLOWS YOU TO ADD TASKS AND SET REMINDERS AND A TO DO LIST FOR YOUR DAY
+</p>
+
+<p>
+YOU COULD ALSO FOLLOW CUSTOM ROUTINES MADE BY FAMOUS PEOPLE KNWON BY THEIR ROUTINES:
+</p>
+
+<form method="POST">
+
+    <h3>Choose Mode</h3>
+    <input name="main_choice" placeholder="Enter 1 or 2">
+
+    <h3>If 1 (Famous routines)</h3>
+    <input name="choice" placeholder="1 Bryan, 2 Dwayne, 3 Rhonda, 4 Sinclair, 5 Gaurang">
+
+    <h3>If 2 (Your task)</h3>
+    <input name="task" placeholder="Enter task"><br><br>
+    <input name="desc" placeholder="Description"><br><br>
+    <input name="time" placeholder="Time"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<pre>
+{{ result }}
+</pre>
+
+</body>
+</html>
