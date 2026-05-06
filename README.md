@@ -25,13 +25,13 @@ Ultimately, this project serves as:
 
 ##  Features
 
-* 📋 Create your own daily tasks with:
+*  Create your own daily tasks with:
 
   * Task name
   * Description
   * Deadline / time
 
-* 🌟 Explore routines of well-known personalities:
+*  Explore routines of well-known personalities:
 
   * Bryan Johnson
   * Dwayne Johnson
@@ -39,14 +39,14 @@ Ultimately, this project serves as:
   * Dr. David Sinclair
   * Dr. Gaurang Krishna
 
-* 🧠 Combines productivity with inspiration by allowing users to:
+*  Combines productivity with inspiration by allowing users to:
 
   * Follow structured routines
   * Build their own daily systems
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Backend:** Python (Flask)
 * **Frontend:** HTML (Jinja Templates)
@@ -54,7 +54,7 @@ Ultimately, this project serves as:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 my_flask_app/
@@ -65,7 +65,7 @@ my_flask_app/
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 1. Clone the repository:
 
@@ -99,7 +99,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 
 This project is deployed using **PythonAnywhere**.
 
@@ -110,7 +110,7 @@ This project is deployed using **PythonAnywhere**.
 
 ---
 
-## 📌 Purpose of the Project
+##  Purpose of the Project
 
 This project was built to:
 
@@ -120,13 +120,13 @@ This project was built to:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Charan**
 https://github.com/cherry5231
 
 ---
 
-## ⭐ Contribute
+##  Contribute
 
 Feel free to fork this repo and improve it. Suggestions and improvements are always welcome.
