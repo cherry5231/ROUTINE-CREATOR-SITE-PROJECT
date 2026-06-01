@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Routine Task Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>WELCOME TO DAILY ROUTINE TASK MANAGER</h2>
+
+<p>This site lets you add a task with a reminder, or follow a routine from a well-known person.</p>
+
+<form method="POST">
+
+    <h3>1. Follow a famous routine</h3>
+    <label>Pick a person:
+        <select name="choice">
+            <option value="">— none —</option>
+            <option value="1">Bryan Johnson</option>
+            <option value="2">Dwayne Johnson</option>
+            <option value="3">Dr. Rhonda Patrick</option>
+            <option value="4">Dr. David Sinclair</option>
+            <option value="5">Dr. Gaurang Krishna</option>
+        </select>
+    </label>
+
+    <h3>2. Or create your own task</h3>
+    <input name="task" placeholder="Task name"><br><br>
+    <input name="description" placeholder="Description"><br><br>
+    <input name="time" placeholder="Time / deadline"><br><br>
+
+    <h3>Mode</h3>
+    <label><input type="radio" name="main_choice" value="1" checked> Show famous routine</label>
+    <label><input type="radio" name="main_choice" value="2"> Create my task</label>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+{% if result %}
+<hr>
+<pre>{{ result }}</pre>
+{% endif %}
+
+</body>
+</html>
