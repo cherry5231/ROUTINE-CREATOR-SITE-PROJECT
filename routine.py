@@ -6,7 +6,7 @@ print("\n THIS SITE ALLOWS YOU TO ADD TASKS AND SET REMINDERS AND A TO DO LIST F
 print("\n YOU COULD ALSO FOLLOW CUSTOM ROUTINES MADE BY FAMOUS PEOPLE KNWON BY THEIR ROUTINES: ")
 
 print("scientific people's rotuine: ")
-Dr_Rhonda_Patrick = ("""Rhonda Patrick's Daily Routine (2026 Updated)
+DR_RHONDA_PATRICK = ("""Rhonda Patrick's Daily Routine (2026 Updated)
 By Routines
 
 Dr. Rhonda Patrick is a PhD biochemist, research scientist, and the founder of FoundMyFitness, one of the most evidence-dense health and longevity platforms online. Her Rhonda Patrick daily routine is built on her deep expertise in micronutrient research, heat stress biology, and cellular health, and it draws from peer-reviewed science rather than trends or personal biases.
@@ -144,7 +144,7 @@ Her work stands out because she brings primary research to accessible language w
 
 The practical takeaway from Patrick's protocol is to prioritize sauna, omega-3s, and complete micronutrient intake before adding anything exotic. The fundamentals, done consistently, drive most of the benefit. """)                                                              
 
-Dr_David_Sinclair = ("""Harvard’s David Sinclair Reveals His Daily Diet and Lifespan-Promoting Habits
+DR_DAVID_SINCLAIR = ("""Harvard’s David Sinclair Reveals His Daily Diet and Lifespan-Promoting Habits
 Dr. Sinclair stays a whole decade younger than his actual chronological age in years, likely from consuming a plant- and nut-based diet along with getting plenty of sleep.
 
 (Harvard Professor Dr. David Sinclair | MoneyControl)
@@ -184,7 +184,7 @@ Incorporating a Healthy Exercise Routine
 Sinclair aims for doing a weight-lifting routine three times per week. He also tries to go for a run daily, and if he doesn’t have the energy for a run, he’ll go for a walk instead. Along those lines, he says that his most significant health-related challenge has become getting himself moving.
 
 Sinclair’s biggest piece of advice for people wanting to extend their lifespan is to remain consistent with their age-slowing health habits. He recommends trying your best to adhere to your longevity-promoting plans under whatever circumstances you find yourself in. Also, don’t find excuses to splurge or disregard your healthy habits.""")
-Dr_Gaurang_Krishna_Longetivity_expert = ("""Doctor and longevity expert shares 6 daily habits that can add years to life and boost health
+DR_GAURANG_KRISHNA = ("""Doctor and longevity expert shares 6 daily habits that can add years to life and boost health
 
 
 Dr. Gaurang Krishna emphasizes that longevity stems from daily habits, not miracle cures. He suggests starting with morning sunlight exposure to regulate circadian rhythms and boost Vitamin D. Prioritizing consistent movement over intense workouts, managing stress through mindfulness, and maintaining a balanced diet rich in plants and lean proteins are crucial.
@@ -214,7 +214,7 @@ Longevity isn’t about chasing perfection. It’s about repeating small actions
 No pill will add 20 healthy years, but these tiny habits. They can and they will.
 Authored by: Dr Gaurang Krishna, MD, Longevity Expert, Dermatologist, Hair Transplant Surgeon, MedLinks""")
 
-bryan_johnson = ( """ In bed by 8:30 pm 
+BRYAN_JOHNSON = ( """ In bed by 8:30 pm 
 Every day starts the night before. Sleep is my #1 life priority because high-quality rest makes hard things easy and impossible things doable. 
 My morning routine:  
 1. Wake up ~5 am
@@ -321,7 +321,7 @@ I spent nearly 20 years wrecking my body. If I can reverse that, just think what
 
 
 
-dwayne_johnson = ("""  Wake-Up: 4 AM
+DWAYNE_JOHNSON = ("""  Wake-Up: 4 AM
 Johnson wakes up at approximately 4 AM every day. He has described this early start as non-negotiable, treating it as the foundation of everything else that follows.
 
 "I wake up at 4 AM every day. That hour between 4 and 5 in the morning is mine. It's my time to get ahead."
@@ -379,32 +379,32 @@ if main_choice == "1":
     print("famous people routines you can follow up if you dont have your own")
     choice = input("Enter 1 for Bryan Johnson, 2 for Dwayne Johnson: ,3 for Dr Rhonda Patrick, 4 for Dr David Sinclair, 5 for Dr _Gaurang Krishna Longetivity_expert\n")
     if choice == "1":
-     print(bryan_johnson)
+     print(BRYAN_JOHNSON)
     elif choice == "2":
-     print(dwayne_johnson)
+     print(DWAYNE_JOHNSON)
     elif choice == "3":
-     print(Dr_Rhonda_Patrick)
+     print(DR_RHONDA_PATRICK)
     elif choice == "4":
-     print(Dr_David_Sinclair)
+     print(DR_DAVID_SINCLAIR)
     elif choice == "5":
-     print(Dr_Gaurang_Krishna_Longetivity_expert)
+     print(DR_GAURANG_KRISHNA)
 elif main_choice == "2":
-     TASKS = []
+     tasks = []
      while True:
-       Task_names = input("Enter task (or 'stop'):")
-       if Task_names.lower() == "stop":
+       task_name = input("Enter task (or 'stop'):")
+       if task_name.lower() == "stop":
         break
 
        print("write a description for each task: \n")
-       Description = input("")
+       description = input("")
 
        print("please make sure to mention the time of the day")
        deadline  = input("")
 
-       TASKS.append((Task_names,Description,deadline))
+       tasks.append((task_name,description,deadline))
 
      print("\n your Routine is : ")
-     for t in TASKS:
+     for t in tasks:
          print("Today's Task",t[0],"\n",t[1],"\n", "To be completed within\n",t[2])
     
     
